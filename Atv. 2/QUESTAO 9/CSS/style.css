@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4ff; /* Fundo claro com leve azulado */
+    color: #0d1b2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2em;
+  }
+  
+  .container {
+    background-color: #e3f2fd; /* Azul marinho claro */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2.5em 3em;
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #0d47a1; /* Azul marinho escuro */
+    font-weight: 600;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 1em;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f8fbff;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #42a5f5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(66, 165, 245, 0.4);
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1.1em;
+    background-color: #1e88e5; /* Azul marinho principal */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1976d2;
+  }
+  
+  .resultado {
+    margin-top: 1.5em;
+    padding: 1em;
+    font-size: 1.15em;
+    background-color: #f8fbff;
+    border-left: 5px solid #42a5f5;
+    color: #0d1b2a;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

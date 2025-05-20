@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gerador de Senha</title>
+
+    <!-- Fonte moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand :wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="C:\Users\user2\Programação Web1\Function\Atv. 2\QUESTAO 4\CSS\style.css">
+</head>
+<body>
+
+    <!-- Interface do app -->
+    <div class="container">
+        <h2>Gerador de Senha Segura</h2>
+        <input type="number" id="comprimento" placeholder="Comprimento da senha (mín. 6)" min="6" value="10">
+        <button onclick="gerar()">Gerar Senha</button>
+
+        <div class="senha-output" id="senhaOutput">Sua senha aparecerá aqui</div>
+        
+        <button class="copy-btn" onclick="copiarSenha()">Copiar</button>
+        <div class="msg-copied" id="msgCopiado">Senha copiada!</div>
+    </div>
+
+    <script src="C:\Users\user2\Programação Web1\Function\Atv. 2\QUESTAO 4\JS\script.js"></script>
+</body>
+</html>
